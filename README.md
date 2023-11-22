@@ -35,4 +35,15 @@ Tous les `Heros` ont de ça en commun qu'ils ont tous une sacoche qui conserve u
 
 Vous pouvez imaginer dans un premier temps une solution à base de tableaux de pointeurs (n'oubliez pas que votre solution doit permettre le polymorphisme)
 
-## 4. Les pouvoirs de télépathie
+## 4. Attaques spéciales et guérison de télépathie
+
+Dans cette partie, nous nous intéresseront aux magiciens et aux créatures : 
+
+
+### 4.1 Attaques spéciales
+
+Les Magiciens sont dotés de pouvoirs très puissants. Ils peuvent par exemple infliger des dégâts critiques à leurs ennemis, rien qu'en incantant des formules magiques très anciennes.
+
+Dans la classe `Magicien`, définissez une méthode `attaqueSpeciale(Creature&)`, cette attaque va infliger un nombre de dégâts très important.
+
+Vous utiliserez un pointeur vers la méthode `subitDegats(int)` de la classe ` Creature` . Ainsi, la classe  `Magicien `connaît la signature de la méthode et la classe `Creature` peut implémenter plusieurs méthodes avec cette même signature (ex : `subitDegatsCrtitiques(int)`).
